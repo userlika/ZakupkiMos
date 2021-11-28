@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Настройка уведомлений</title>
+</head>
+<body>
+<h1> Настройка уведомлений</h1>
+
+<div >
+    <h3>На основе ваших интересов</h3>
+        <form  method="POST">
+        {{ form.hidden_tag() }}
+        <div class="btn">
+		    {{ form.submit_word1() }}
+            {{ form.submit_word2() }}
+            {{ form.submit_word3() }}
+            {{ form.submit_word4() }}
+            {{ form.submit_word5() }}
+		</div>
+
+
+        <ul>
+            {% for ntfc in notifications %}
+                 <li>{{ ntfc }} </li>
+            {% endfor %}
+        </ul>
+
+
+		<br/>
+        <br/>
+
+        {{ form.submit() }}
+        </form>
+        <br/>
+        <br/>
+</div>
+</body>
+</html>
