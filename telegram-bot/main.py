@@ -1,8 +1,26 @@
+import telebot
+#from telebot import types
+
+#from aiogram.types import KeyboardButton
+#from telegram import bot, message
+from aiogram import bot
 from telegram.ext import Updater, CommandHandler, MessageHandler, Filters
 
 
 def start(update, context):
-    update.message.reply_text('Привет! Здесь ты будешь получать актуальные уведомления от сайта https://zakupki.mos.ru/')
+    update.message.reply_text(
+        'Привет! Здесь ты будешь получать актуальные уведомления от сайта https://zakupki.mos.ru/')
+    update.message.reply_text('Чтобы посмотреть последние новости на сайте, набери команду: /news')
+    update.message.reply_text('Чтобы подписаться на интересующие уведомления, набери команду: /notification')
+
+
+def news(update, context):
+    update.message.reply_text('Последние новости на сайте: https://old.zakupki.mos.ru/#/news')
+
+
+def notification(update, context):
+    update.message.reply_text('Вы подписались на уведомления! ')
+
 
 
 def help(update, context):
@@ -25,6 +43,8 @@ def main():
     dispatcher = updater.dispatcher
 
     dispatcher.add_handler(CommandHandler("start", start))
+    dispatcher.add_handler(CommandHandler("news", news))
+    dispatcher.add_handler(CommandHandler("notification", notification))
     dispatcher.add_handler(CommandHandler("help", help))
 
     dispatcher.add_handler(MessageHandler(Filters.text, text))
@@ -38,3 +58,4 @@ def main():
 
 if __name__ == '__main__':
     main()
+
