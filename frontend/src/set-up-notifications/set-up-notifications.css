@@ -1,0 +1,83 @@
+.set-up-notifications__fieldset {
+  position: relative;
+  padding-top: 50px;
+  background-color: #F6F8FC;
+  border-radius: 22px;
+  border-color: #F6F8FC;
+  outline: none;
+  border-style: hidden;
+  min-width: 500px;
+}
+
+.set-up-notifications__legend {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  font-family: Open Sans, Arial;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #224780;
+}
+
+.set-up-notifications__notification-item-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.set-up-notifications__notification-item-checkbox {
+  display: flex;
+  flex-direction: row;
+}
+
+.set-up-notifications__notification-item {
+  width: 20px;
+  height: 20px;
+  border-radius: 4px;
+  margin-right: 10px;
+  margin-bottom: 0px;
+  box-sizing: border-box;
+  cursor: pointer;
+  border: 2px solid #6E87AD;
+}
+
+.set-up-notifications__notification-item--active {
+  background: url(tick2-icon.svg) no-repeat 50% 50% #224780;
+  border: 2px solid #224780;
+}
+
+.set-up-notifications__notification-item-name {
+  margin: 0;
+  font-family: Open Sans, Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #6E87AD;
+}
+
+.set-up-notifications__notification-item-name--active {
+  color: #224780;
+}
+
+.set-up-notifications__notification-item-input {
+  color: #224780;
+  border-radius: 50px;
+  outline: none;
+  border: 2px solid #224780;
+  padding: 0 10px;
+  background-color: white;
+  height: 24px;
+  min-width: 225px;
+}
+
+.set-up-notifications__notification-item-input:disabled {
+  border-color: #6E87AD;
+  background-color: #FBFCFE;
+}

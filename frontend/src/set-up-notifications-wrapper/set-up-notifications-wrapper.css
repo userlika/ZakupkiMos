@@ -1,0 +1,7 @@
+.set-up-notifications-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 1200px;
+  padding: 40px;
+}

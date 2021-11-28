@@ -1,0 +1,25 @@
+.App {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+}
+
+.app-container {
+  width: 1280px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+.app-title {
+  font-family: Open Sans, Arial;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 33px;
+  letter-spacing: 0em;
+  text-align: left;
+  padding-left: 40px;
+  color: #224780;
+}
+

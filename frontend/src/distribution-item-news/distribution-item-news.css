@@ -1,0 +1,31 @@
+.distribution-item-news {
+  padding-left: 40px;
+  padding-right: 40px;
+  background-color: #F6F8FC;
+  height: 55px;
+}
+
+.distribution-item-news--white-bgc {
+  background-color: white;
+}
+
+.distribution-item-news-container {
+  display: grid;
+  grid-template-columns: 300px repeat(4, 1fr);
+}
+
+.distribution-item-news-name {
+  font-family: Open Sans, Arial;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #224780;
+}
+
+.distribution-item-news-switch {
+  text-align: center;
+  margin: -5px auto 0 auto;
+}
